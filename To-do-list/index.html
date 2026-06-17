@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<title>Todo List</title>
+</head>
+<body>
+
+<div class="container">
+  <div class="head">
+<h1><i class="fa-solid fa-circle-check">   
+  
+</i> My Todo List</h1>  </div>
+
+  <div id="te">
+    <input type="text" placeholder="What needs to be done?" class="text">
+    <button class="btn">+</button>
+  </div>
+
+  <div class="filters">
+    <button class="filterBtn active" data-filter="all">All</button>
+    <button class="filterBtn" data-filter="active">Active</button>
+    <button class="filterBtn" data-filter="completed">Completed</button>
+  </div>
+
+  <ul id="taskList"></ul>
+  <div class="list-footer">
+    <span id="itemsLeft">0 item left</span>
+    <button id="clearCompleted">Clear completed</button>
+</div>
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
